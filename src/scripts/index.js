@@ -1,3 +1,7 @@
 import '../styles/index.scss';
+import './twitApi';
 
-console.log('webpack starterkit');
+$(document).ready(function() {
+	var loading = $('.loading');
+	loading.delay(loading.attr('delay-hide')).slideUp();
+});

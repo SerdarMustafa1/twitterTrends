@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
-</head>
-<body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta http-equiv="Refresh" content="30000" />
+		<title>Twitter Trends</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../src/styles/index.css" />
+	</head>
+
+	<body>
+		<!-- loader -->
+		<div class="loading" delay-hide="4000"></div>
+		<!-- Delay Hide + default: 50sec
+	After a time the loading screen will be hidden -->
+		<!-- Navbar -->
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img
+					src="/src/styles/assets/images/GitHub-Mark-32px.png"
+					width="30"
+					height="30"
+					alt="github-logo"
+				/>
+				Twitter Trends
+			</a>
+		</nav>
+		<!-- main body -->
+		<h1>
+			<span
+				><img
+					src="../src/styles/assets/images/apple-touch-icon-192x192.png"
+					alt="Twitter Logo"
+			/></span>
+			Trending Hashtags by location
+		</h1>
+		<div class="row">
+			<div class="col-4">
+				<h6 class="hTitle">United Kingdom</h6>
+				<ol class="headerUK">
+					<!-- <li class="UK"></li> -->
+				</ol>
+			</div>
+			<div class="col-4">
+				<h6 class="hTitle">Germany</h6>
+				<ol class="headerDE">
+					<!-- <li class="DE"></li> -->
+				</ol>
+			</div>
+			<div class="col-4">
+				<h6 class="hTitle">USA</h6>
+				<ol class="headerUS">
+					<!-- <li class="US"></li> -->
+				</ol>
+			</div>
+		</div>
+		<ul class="disclaimer">
+			<li>
+				<a
+					href="https://developer.twitter.com/en/docs/trends/trends-for-location/api-reference/get-trends-place"
+					>This information is cached for 5 minutes. Requesting more frequently
+					than that will not return any more data, and will count against rate
+					limit usage. More info available, here:</a
+				>
+			</li>
+			<li>
+				<a
+					class="disclaimer"
+					href="https://developer.twitter.com/en/docs/trends/trends-for-location/api-reference/get-trends-place"
+					>Not all results return the 'Tweets Volume'</a
+				>
+			</li>
+		</ul>
+
+		<!-- footer -->
+		<footer class="footer mt-auto py-3 fixed-bottom">
+			Made by Serdar Mustafa
+		</footer>
+		<!-- scripts -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.js"
+			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

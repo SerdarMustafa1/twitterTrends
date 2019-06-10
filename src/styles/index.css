@@ -1,0 +1,128 @@
+body {
+	background-color: #e6ecf0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #009999;
+}
+
+/* loader */
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.loading {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #3174b3;
+	z-index: 99;
+}
+
+.loading:after {
+	content: "";
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: -30px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	border: 6px solid #f2f2f2;
+	border-top: 6px dotted #f2f2f2;
+	border-bottom: 6px dotted #f2f2f2;
+	border-radius: 50%;
+	-webkit-animation: loading 2s infinite;
+	animation: loading 2s infinite;
+}
+
+.loading:before {
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: white;
+	content: "Loading...";
+	position: absolute;
+	top: 57%;
+	text-align: center;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+@-webkit-keyframes loading {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+
+	50% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes loading {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+
+	50% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+#color {
+	height: 35px;
+	border-radius: 5px;
+	background-color: #fefefe;
+}
+
+nav {
+	height: 60px;
+}
+
+h1 {
+	text-align: center;
+	padding: 30px;
+	font-size: 48x;
+	font-weight: 600;
+	text-align: center;
+	margin: 30px 0 30px 0;
+	color: #1da1f2;
+}
+
+ul.header li {
+	display: block;
+	padding: 10px;
+	margin: 30px;
+
+}
+
+li {
+	text-align: center;
+	/* list-style-type: none; */
+}
+
+.total {
+	color: #1da1f2;
+}
+
+.hTitle {
+	font-size: 36px;
+	font-weight: 600;
+	text-align: center;
+	margin: 30px 0 30px 0;
+	color: #657786;
+}
+
+.disclaimer {
+	margin-bottom: 80px;
+}
+
+footer {
+	background-color: #1da1f2;
+	color: #fefefe;
+	text-align: center;
+}
